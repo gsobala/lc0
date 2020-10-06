@@ -3,7 +3,7 @@ configuration: Release
 platform: x64
 image: macos
 install:
-- brew install meson
+- pip3 install --user meson
 build_script:
 - sh build.sh
 
