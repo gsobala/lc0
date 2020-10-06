@@ -1,5 +1,5 @@
 version: '{build}'
-iconfiguration: Release
+configuration: Release
 platform: x64
 image: macos
 install:
