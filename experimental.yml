@@ -1,0 +1,9 @@
+version: '{build}'
+iconfiguration: Release
+platform: x64
+image: macos
+install:
+- brew install meson
+build_script:
+- sh build.sh
+
