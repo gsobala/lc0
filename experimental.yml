@@ -5,7 +5,8 @@ image: macos
 install:
 - python3 -m venv venv
 - source ./venv/bin/activate
-- pip3 install --user meson
+- pip3 install meson
+- pip3 install ninja
 - export PATH=/Users/appveyor/Library/Python/3.7/bin:$PATH
 build_script:
 - ./build.sh
