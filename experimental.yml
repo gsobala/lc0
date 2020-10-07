@@ -10,4 +10,10 @@ install:
 - export PATH=/Users/appveyor/Library/Python/3.7/bin:$PATH
 build_script:
 - ./build.sh
+artifacts:
+- path: build/release/lc0
+  name: lc0
+test_script:
+- cd build/release
+- meson test --print-errorlogs
 
