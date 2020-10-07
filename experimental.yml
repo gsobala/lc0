@@ -15,5 +15,5 @@ artifacts:
   name: lc0
 test_script:
 - cd build/release
-- meson test --print-errorlogs
+- ./encoder_test
 
