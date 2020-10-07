@@ -3,9 +3,9 @@ configuration: Release
 platform: x64
 image: macos
 install:
-- brew doctor
-- brew install python3
-- python3 -m pip install --user meson
+- python3 -m venv venv
+- source ./venv/bin/activate
+- pip3 install --user meson
 build_script:
-- sh build.sh
+- ./build.sh
 
