@@ -9,7 +9,9 @@ install:
 - pip3 install ninja
 - export PATH=/Users/appveyor/Library/Python/3.7/bin:$PATH
 build_script:
-- ./build.sh
+- meson build/release --buildtype release 
+- cd build/release
+- ninja
 artifacts:
 - path: build/release/lc0
   name: lc0
