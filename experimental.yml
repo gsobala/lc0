@@ -16,6 +16,5 @@ artifacts:
 - path: build/release/lc0
   name: lc0
 test_script:
-- cd build/release
 - ./encoder_test
 
