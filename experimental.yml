@@ -3,7 +3,7 @@ configuration: Release
 platform: x64
 image: macos
 install:
-- brew upgrade mercurial
+- brew update
 - brew install python3
 - python3 -m pip install --user meson
 build_script:
